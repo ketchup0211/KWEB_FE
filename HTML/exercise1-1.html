@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>KWEB Survey Page</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">KWEB Survey Page</h1>
+      <img
+        alt="kweb-logo"
+        id="kweb-logo"
+        src="https://i.imgur.com/hSSFVSw.png"
+      />
+      <br />
+      <a
+        title="KWEB 홈페이지 바로가기"
+        href="https://kweboﬀicial.com/"
+        target="_self"
+        >KWEB Homepage</a
+      >
+    </div>
+    <form class="survey-form">
+      <div>
+        <h4 class="first-question">1. Write your name.</div>
+        <input id="name" type="text" name="name" />
+      </h4>
+      <div>
+        <h4 class="second-question">2. Write your student number.</div>
+        <input id="number" type="text" name="number" />
+      </h4>
+      <div>
+        <h4 class="thrid-question">3. Select your member level.</div>
+        <label
+          ><input type="radio" name="member-level" value="admin" />Admin</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="member-level"
+            value="intern"
+          />intern</label
+        ><label
+          ><input
+            type="radio"
+            name="member-level"
+            value="qualified"
+          />Qualified</label
+        >
+      </h4>
+      <div>
+        <h4 class="fourth-question">
+          4. Select all fields you are interested in.
+        </h4>
+        <label><input type="checkbox" name="interest" value="front-end">Front-end</label>
+        <label><input type="checkbox" name="interest" value="back-end">Back-end</label>
+        <label><input type="checkbox" name="interest" value="web-crawling">Web crawling</label>
+        <label><input type="checkbox" name="interest" value="web-security">Web security</label>
+        <label><input type="checkbox" name="interest" value="extra">Extra<input id="extra" type="text"/></label>
+      </div>
+      <div>
+        <h4 class="fifth-question">
+          5. Give us your overall evalutaion and feedback about the previous study.
+        </h4>
+        <textarea cols="40" rows="5" placeholder="" name="feedback"></textarea>
+      </div>
+      <button type="submit">Send your answers</button>
+    </form>
+  </body>
+</html>
