@@ -1,0 +1,46 @@
+.header {
+  background-color: palevioletred;
+  height: 100px;
+  margin: 10px 0px;
+  border: 1px solid crimson;
+}
+
+.navbar {
+  background-color: orange;
+  height: 200px;
+  margin: 10px 0px;
+  border: 1px solid brown;
+}
+.content {
+  background-color: skyblue;
+  height: 250px;
+  margin: 10px 0px;
+  border: 1px solid blue;
+}
+.footer {
+  background-color: greenyellow;
+  height: 200px;
+  margin: 10px 0px;
+  border: 1px solid green;
+}
+
+@media only screen and (min-width: 800px) {
+  .body {
+    display: flex;
+    gap: 10px;
+  }
+  .header {
+  }
+  .navbar {
+    display: inline-block;
+    flex: 0 0 250px;
+    height: 400px;
+    margin: 0px;
+  }
+  .content {
+    display: inline-block;
+    flex: 1;
+    height: 400px;
+    margin: 0px;
+  }
+}
