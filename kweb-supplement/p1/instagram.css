@@ -1,8 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
+  width: 100%;
+  text-align: center;
+}
+
+#header {
+  height: 80px;
+  background-color: white;
+  margin: 10px;
+  border: 1px solid gray;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 #feed-container {
@@ -10,7 +19,8 @@ body {
   border-top: 1px solid grey;
   border-left: 1px solid grey;
   border-right: 1px solid grey;
-  width: 500px;
+  width: 550px;
+  display: inline-block;
 }
 
 #posts {
@@ -25,22 +35,22 @@ body {
 
 .user-profile-container {
   display: flex;
-  gap: 15px;
-  margin: 10px;
+  gap: 10px;
+  margin: 5px;
   align-items: center;
 }
 
 .likes-container {
   display: flex;
   gap: 10px;
-  margin: 5px 10px;
+  margin: 5px;
   align-items: center;
   line-height: 0px;
 }
 
 .user-profile {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: gainsboro;
 }
@@ -67,4 +77,5 @@ body {
 
 .description {
   margin: 5px;
+  text-align: justify;
 }
