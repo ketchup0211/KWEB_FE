@@ -47,10 +47,12 @@ const POSTS = [
 function createPost(post) {
   const postElement = document.createElement("div");
   postElement.setAttribute("id", post.username);
+  postElement.classList.add("container");
 
   const userProfileContainer = document.createElement("div");
   const userName = document.createElement("p");
   const userProfile = document.createElement("div");
+  userProfileContainer.classList.add("user-profile-container");
   userName.classList.add("user-name");
   userProfile.classList.add("user-profile");
   userName.innerText = post.username;
@@ -60,6 +62,7 @@ function createPost(post) {
   const likesContainer = document.createElement("div");
   const likes = document.createElement("p");
   const likesImg = document.createElement("img");
+  likesContainer.classList.add("likes-container");
   likes.classList.add("likes");
   likesImg.classList.add("likes-img");
   likes.innerText = post.likes;
@@ -74,9 +77,13 @@ function createPost(post) {
   description.innerText = post.description;
   descriptionContainer.appendChild(description);
 
-  const imageContainer = document.createElement("img");
-  imageContainer.setAttribute("alt", post.username);
-  imageContainer.setAttribute("src", post.image);
+  const imageContainer = document.createElement("div");
+  const image = document.createElement("img");
+  imageContainer.classList.add("image-container");
+  image.classList.add("image");
+  image.setAttribute("alt", post.username);
+  image.setAttribute("src", post.image);
+  imageContainer.appendChild(image);
 
   postElement.appendChild(userProfileContainer);
   postElement.appendChild(imageContainer);
