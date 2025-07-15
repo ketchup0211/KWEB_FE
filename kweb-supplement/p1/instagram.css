@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
@@ -129,4 +132,5 @@ body {
   padding: 15px;
 
   border-radius: 20%;
+  cursor: pointer;
 }
