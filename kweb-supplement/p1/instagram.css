@@ -6,19 +6,46 @@ body {
 }
 
 #header {
-  height: 80px;
+  height: 45px;
   background-color: white;
   margin: 10px;
-  border: 1px solid gray;
+  padding: 5px 15px;
+  box-shadow: 1px 1px 1px 1px rgb(194, 193, 193, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
   display: flex;
   align-items: center;
 }
 
+#menu {
+  display: flex;
+  gap: 5px;
+}
+
+#hyper-link,
+#sort {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#hyper-link:hover,
+#sort:hover {
+  cursor: pointer;
+}
+
 #feed-container {
   background-color: white;
-  border-top: 1px solid grey;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
+  border-top: 1px solid rgb(194, 193, 193, 0.4);
+  border-left: 1px solid rgb(194, 193, 193, 0.4);
+  border-right: 1px solid rgb(194, 193, 193, 0.4);
   width: 550px;
   display: inline-block;
 }
@@ -30,7 +57,7 @@ body {
 .container {
   overflow: hidden;
   padding: 10px 15px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(194, 193, 193, 0.4);
 }
 
 .user-profile-container {
@@ -52,7 +79,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: gainsboro;
+  background-color: #dbdbdb;
 }
 
 .user-name,
