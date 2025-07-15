@@ -93,10 +93,25 @@ function createPost(post) {
   return postElement;
 }
 
+function sortPost() {
+  const postsContainer = document.getElementById("posts");
+  const containers = document.querySelectorAll(".container");
+  for (let container of containers) {
+    postsContainer.removeChild(container);
+  }
+
+  POSTS.sort((a, b) => a.likes - b.likes);
+  for (let post of POSTS) {
+    postsContainer.appendChild(createPost(post));
+  }
+}
 // main 실행 함수
 function main() {
   // 게시물 엘리먼트를 넣어야 하는 곳
   const postsContainer = document.getElementById("posts");
+
+  const sortBtn = document.getElementById("sort");
+  sortBtn.addEventListener("click", sortPost);
 
   for (let post of POSTS) {
     postsContainer.appendChild(createPost(post));
