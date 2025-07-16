@@ -42,6 +42,12 @@ const POSTS = [
     image:
       "https://cdn.pixabay.com/photo/2017/04/02/22/36/easter-2197043_1280.jpg",
   },
+  {
+    username: "chummy._.official",
+    likes: 1111,
+    description: "안녕 나는 참이야!",
+    image: "./img/chummy.png",
+  },
 ];
 
 function createPost(post) {
